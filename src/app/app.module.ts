@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { LizComponent } from './liz/liz.component';
+import { FooterDonatonComponent } from './footer-donaton/footer-donaton.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    LizComponent
+    LizComponent,
+    FooterDonatonComponent
   ],
   imports: [
     BrowserModule,
