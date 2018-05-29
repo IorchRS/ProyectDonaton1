@@ -1,45 +1,52 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container-fluid fijo">
-  <div class="row margenBaner">
-  <div class="col-md-3">
-    <div class="logo"><img class="pequenaLogo" src="../../assets/imagenes/Logo_Donaton1.jpg"></div>
-  </div>
-  <div class="col-md-4">
-    
-  </div>
-  <div class="col-md-2 padin">
-  
-    <div class="izquierda d-flex justify-content-center estiloRegistro">Registro</div>
-  </div>
-  <div class="col-md-2 padin hover">
-    <div class="izquierda d-flex justify-content-center estiloSalir">Salir</div>
-  </div>
-  
-  </div>
-  </div>
-  <div class="container-fluid"> 
-  <div class="row d-flex justify-content-center">
-    <div class="col-md-12 d-flex justify-content-center">
-      <div><img class=" ImgPrincipal d-flex justify-content-center" src="../../assets/imagenes/principal.png"></div>
-    </div>
-  </div>
-  </div>
+
   
 
 
 
-<div class="container-fluid">
+<div class="container-fluid fondoPrinBaner">
 <div class="row">
-    <a routerLink="">Home</a><br>
-    <a routerLink="about/48">About</a><br>
-    <a routerLink="liz">Liz</a>
+
+    <div class="col-md-3"> <a routerLink=""><img class="pequenaLogo" src="../../assets/imagenes/Logo_Donaton1.jpg"></a>  </div>
+  <div class="col-md-4"></div>
+    <div class="col-md-2 izquierda color1 borde" routerLink="about/48">Contacto</div>
+   <div class="col-md-2 izquierda"> <a routerLink="liz">Dona ahora ;)</a></div>
   </div>
 </div>
+
 <router-outlet></router-outlet>
 
 
 
-
+<div class="container">
+    <div class="row margenNavegador">
+    <div class="col-md-12">
+  
+  
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="col-md-3 nav-item pad accion">
+              <a class="nav-link active text-uppercase font-weight-bold" id="homer" data-toggle="tab" href="#" role="tab" aria-controls="home" aria-selected="true">Beneficiarios</a>
+            </li>
+            <li class="col-md-3 nav-item pad accion">
+              <a class="nav-link estiloNavMedio" id="profile" data-toggle="tab" href="#" role="tab" aria-controls="profile" aria-selected="false">Quienes Somos</a>
+            </li>
+            <li class="col-md-3 nav-item pad accion">
+              <a class="nav-link estiloNavMedio" id="quienSomos" data-toggle="tab" href="#" role="tab" aria-controls="quienSomos" aria-selected="false">Centros de acopio</a>
+            </li>
+            <li class="col-md-3 nav-item pad accion">
+                <a class="nav-link estiloNavMedio" id="contact" data-toggle="tab" href="#" role="tab" aria-controls="contact" aria-selected="false">Contacto</a>
+              </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="homer" role="tabpanel" aria-labelledby="home-tab">obubububuybuybbbuy</div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
+            <div class="tab-pane fade" id="quienSomos" role="tabpanel" aria-labelledby="quienSomos-tab">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
+          </div>
+  
+    </div>
+  </div>
+  </div>
 
 <app-footer-donaton></app-footer-donaton>
 

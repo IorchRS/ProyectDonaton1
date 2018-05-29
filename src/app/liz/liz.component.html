@@ -1,27 +1,28 @@
 <div class="container color-dark">
   <div class="col">
-    <p> {{Text }}</p>
+    <p class="titulos"> {{Text }}</p>
   </div>
   <div class="col">
-    <p>  {{ lista }}{{ itemCount }}</p>
+    <p class="titulos">  {{ lista }}{{ itemCount }}</p>
   </div>
 </div>
 <div class="container color-light">
   <div class="col">
-    <p class="sm">Use this form below to add a new bucket list goal. What do you want to accomplish in your life?</p>
+    <p class="sm">ingrese lo que desea donar, adelante</p>
 
     <form>
-      <input type="text" class="txt" name="item" placeholder="Life goal.." [(ngModel)]="goalText">
-      <br><span>{{ goalText }}</span><br>
+      <input type="text" class="txt" name="item" placeholder="Ingresa tu donacion" [(ngModel)]="goalText">
+      <br><span>Para egregar: {{ goalText }}</span><br>
       
       <input type="submit" class="btn" value=  {{btnText}} (click)="addItem()">
-      <input type="submit" class= {{botonColor}} value= {{ponleMas}} (click)="addTextito()">
-      <input type="submit" class="btn" value=  "{{goalText}}">
+      
+    
+
     </form>
   </div>
   <div class="col">
     <p class="life-container">
-      I want to climb a mountain
+      tu ayuda simpre es la diferencia :D
     </p>
     <p class="life-container" *ngFor="let goal of goals">
       {{ goal }}

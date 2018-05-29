@@ -6,12 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./liz.component.scss']
 })
 export class LizComponent implements OnInit {
-  itemCount:number=4;
-  Text: string = 'Agrga un Item'
-  lista: string = 'tu caja tiene una lista de '
-  btnText: string = 'ponle algo'; 
+  itemCount:number=0;
+  Text: string = 'aqui puedes subir lo que donaras'
+  lista: string = 'tu caja de donacion tiene una lista de '
+  btnText: string = 'agregar'; 
   ponleMas: string="ponle UN TEXTITO";
-  goalText: string = 'My first life goal'; 
+  goalText: string = ''; 
   botonColor: string = "btn1";
   goals=[];
   constructor() { }
@@ -26,11 +26,6 @@ export class LizComponent implements OnInit {
     this.goalText = '';
     this.itemCount = this.goals.length;
   }
-  addTextito(){
-this.goals.push("un textito")
-this.goalText='';
-this.itemCount=this.goals.length;
 
-  }
 
 }
