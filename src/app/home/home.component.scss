@@ -4,8 +4,27 @@
     
  }
 .ImgPrincipal{
-    max-width: 90rem;
+    width: 100%;
 }
+.bienv{
+position: absolute;
+top:18rem;
+font-size: 5rem;
+font-family: 'Passion One', cursive;
+color: rgba(237, 237, 243, 0.795);  
+opacity: 1rem;
+left: 9rem;;
+}
+.bienv2{
+    position: absolute;
+    top:25rem;
+    left:9rem;
+    font-size: 5rem;
+    font-family: 'Passion One', cursive;
+    color: rgba(237, 237, 243, 0.795);  
+    opacity: 1rem;
+    
+    }
 
 
 .pequenaLogo{
@@ -26,7 +45,7 @@
     font-weight: bold;
     color: #499982;
 font-size: 1.8rem;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-family: 'Passion One', cursive;
 background-color:rgb(199, 247, 232); 
 }
 
@@ -54,4 +73,23 @@ background-color:rgb(199, 247, 232);
  display: inline;
 }
 
+@media (max-width: 710px) {
+    .chicasLetras {
+        font-size: 1.4rem; 
+        font-weight: 10rem;
+        color: #333333;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: .8em;
+    }
 
+  }
+  @media (max-width: 710px) {
+    .tituloPchic {
+        font-size: 2.5rem;
+        font-stretch: expanded;
+        font-weight:15rem;
+        color: #333333;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
