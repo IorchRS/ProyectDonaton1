@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { LizComponent } from './liz/liz.component';
 import { FooterDonatonComponent } from './footer-donaton/footer-donaton.component';
+import { CaratulaDComponent } from './caratula-d/caratula-d.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterDonatonComponent } from './footer-donaton/footer-donaton.componen
     HomeComponent,
     AboutComponent,
     LizComponent,
-    FooterDonatonComponent
+    FooterDonatonComponent,
+    CaratulaDComponent
   ],
   imports: [
     BrowserModule,
