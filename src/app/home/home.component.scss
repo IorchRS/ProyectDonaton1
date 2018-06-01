@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 .fondo{
     margin: 0rem;
     padding: 0rem;
@@ -10,7 +11,7 @@
 position: absolute;
 top:18rem;
 font-size: 5rem;
-font-family: 'Passion One', cursive;
+font-family: 'Playfair Display', serif;
 color: rgba(237, 237, 243, 0.795);  
 opacity: 1rem;
 left: 9rem;;
@@ -20,7 +21,7 @@ left: 9rem;;
     top:25rem;
     left:9rem;
     font-size: 5rem;
-    font-family: 'Passion One', cursive;
+    font-family: 'Playfair Display', serif;
     color: rgba(237, 237, 243, 0.795);  
     opacity: 1rem;
     
@@ -115,10 +116,10 @@ width: 19rem;
     text-decoration: none;
 }
 .estiloS2{
-    font-weight:inherit;
+  
 font-size: 1.5rem;
-font-family: 'Passion One', cursive;
-color: blue;
+font-family: 'Playfair Display', serif;
+color: rgb(70, 182, 247);
 
 }
 .sec3{
@@ -132,7 +133,7 @@ color: blue;
 li{
     font-weight:inherit;
     font-size: 3rem;
-    font-family: 'Passion One', cursive;
+    font-family: 'Playfair Display', serif;
     color: rgba(209, 209, 235, 0.795);  
 }
 .ImagenDentro{
@@ -141,7 +142,7 @@ li{
     right: 3rem;
     font-size: 4rem;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Playfair Display', serif;
     opacity: 1rem;
     
     }
@@ -151,9 +152,9 @@ li{
         left: 3rem;
     }
     .estiloli{
-        font-weight:inherit;
+        
         font-size: 4rem;
-        font-family: 'Passion One', cursive;
+        font-family: 'Playfair Display', serif;
         color: white;
     }
 .sec{
