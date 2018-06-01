@@ -1,2 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import'~bootstrap/dist/css/bootstrap.min.css';
+
+.animated {
+  
+    -webkit-animation-delay:1s;
+   
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 2s;
+  }
