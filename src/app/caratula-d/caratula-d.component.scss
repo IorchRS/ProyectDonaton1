@@ -4,7 +4,7 @@
 
 
 .titulote{
-background-color: blue;
+background-color: rgba(0, 81, 255, 0.884);
 height: 15rem;
 }
 .letratitulote{
@@ -14,9 +14,16 @@ height: 15rem;
     font-family: 'Playfair Display', serif;
 }
 
+
+
+
+
+
+
+
 //**seccion Equipo de Trabajo**//
 .espacioTituloPS{
-    height: 15rem;
+    margin: 6rem 1rem 6rem 1rem;
 }
 .tituloEquipequño{
     color: rgb(70, 182, 247);
@@ -32,6 +39,46 @@ height: 15rem;
 }
 
 //**termina seccion Equipo de Trabajo**//
+//**seccion Trabajo en equipo**//
+
+.ImgPrincipal{
+    width: 100%;
+}
+.bienv{
+position: absolute;
+top:18rem;
+font-size: 4rem;
+font-family: 'Playfair Display', serif;
+color: rgba(237, 237, 243, 0.795);  
+opacity: 1rem;
+right: 3rem;
+}
+.bienv2{
+    position: absolute;
+    top:25rem;
+    right: 3rem;
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    color: rgba(237, 237, 243, 0.795);  
+    opacity: 1rem;
+    
+    }
+    .bienv3{
+        position: absolute;
+        top:32rem;
+        right: 3rem;
+        font-size: 4rem;
+        font-family: 'Playfair Display', serif;
+        color: rgba(237, 237, 243, 0.795);  
+        opacity: 1rem;
+        
+        }
+
+
+//**termina seccion Trabajo en equipo**//
+
+
+
 //**Empieza integrantes Equipo de Trabajo**//
 .espacionombres{
 
@@ -69,7 +116,7 @@ height: 30rem;
     font-family: 'Playfair Display', serif;
 }
 .margenAcecaNos{
-    margin: 4rem 1rem 4rem 1rem; 
+    margin: 6rem 1rem 6rem 1rem; 
 }
 
 .comienzo{
