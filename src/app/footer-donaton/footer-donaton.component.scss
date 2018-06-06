@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
 .fondo{
     background-color: rgb(199, 247, 232);
 }
@@ -7,4 +10,6 @@
 }
 .estiloTextoLetraEnlace{
     color:blue;
+    font-weight:inherit;
+    font-family: 'Playfair Display', serif;
 }

@@ -8,11 +8,11 @@
 </div>
 <div class="container color-light">
   <div class="col">
-    <p class="sm">ingrese lo que desea donar, adelante</p>
+    <p class="sm txt">ingrese lo que desea donar, adelante</p>
 
     <form>
-      <input type="text" class="txt" name="item" placeholder="Ingresa tu donacion" [(ngModel)]="goalText">
-      <br><span>Para egregar: {{ goalText }}</span><br>
+      <input type="text" class="txt life-container" name="item" placeholder="Ingresa tu donacion" [(ngModel)]="goalText">
+      <br><span class="txt " >Para egregar: {{ goalText }}</span><br>
       
       <input type="submit" class="btn" value=  {{btnText}} (click)="addItem()">
       <input type="submit" class="btn" value="enviar " (click)="addItem()">
