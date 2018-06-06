@@ -1,5 +1,6 @@
 
 <div class="container">
+
 <form class="fondo">
     
     <div class="form-group col-12 col-md-6 col-lg-6">
@@ -71,4 +72,19 @@
   </div>
   </div>
   </form>
+
+  <div class="col-12 col-md-6 col-lg-6">
+Aqui tendira que salir{{ post.nombre}}
+      <ul *ngFor="let post of posts | async">
+          <li>
+            <strong>{{ post.nombre}}</strong>
+            <br>
+            {{post.telefono}}
+          </li>
+        </ul>   
+
+
+
+
+    </div>
 </div>
