@@ -14,13 +14,6 @@ height: 15rem;
     font-family: 'Playfair Display', serif;
 }
 
-
-
-
-
-
-
-
 //**seccion Equipo de Trabajo**//
 .espacioTituloPS{
     margin: 6rem 1rem 6rem 1rem;
@@ -31,6 +24,33 @@ height: 15rem;
     font-family: 'Playfair Display', serif;
 
 }
+//**medias de titulos grandes**//
+@media(min-width : 901px) and (max-width : 1300px) {
+    .tituloEquipequño1 {
+        font-size: 1.5rem;
+    }
+}
+@media(min-width : 701px) and (max-width : 900px) {
+    .tituloEquipequño2 {
+        text-justify: auto;
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 479px) {
+    .tituloEquipequño3{
+        font-size: .8rem;
+        color: rgb(12, 122, 224);
+        text-justify: auto;
+    }
+}
+@media (min-width : 480px) and (max-width: 700px) {
+    .tituloEquipequño4{
+        font-size: 1rem;
+        color: rgb(12, 122, 224);
+        text-justify: auto;
+    }
+}
+
 .tituloEquipo{
     color: rgb(70, 182, 247);
     font-size: 3rem;
@@ -73,17 +93,132 @@ right: 3rem;
         opacity: 1rem;
         
         }
-
-
+        @media (min-width : 1000px) and (max-width : 1300px) {
+            .bienv1 {
+                position: absolute;
+                top:12rem;
+                font-size: 4rem;
+                font-family: 'Playfair Display', serif;
+                opacity: 1rem;
+                right: 3rem;
+            }
+        }
+            @media (min-width : 1000px) and (max-width : 1300px) {
+                .bienv21 {
+                    position: absolute;
+                    top:16rem;
+                    right: 3rem;
+                    font-size: 4rem; 
+                    opacity: 1rem;
+                }
+            }
+                @media (min-width : 1000px) and (max-width : 1300px) {
+                    .bienv31 {
+                        position: absolute;
+                        top:20rem;
+                        right: 3rem;
+                        font-size: 4rem;
+                        font-family: 'Playfair Display', serif;
+                        color: rgba(237, 237, 243, 0.795);  
+                        opacity: 1rem;
+                    }
+                }
+                @media (min-width : 700px) and (max-width : 999px) {
+                    .bienv1 {
+                        position: absolute;
+                        top:7rem;
+                        font-size: 3rem;
+                        font-family: 'Playfair Display', serif;
+                        opacity: 1rem;
+                        right: 3rem;
+                    }
+                }
+                @media (min-width : 700px) and (max-width : 999px) {
+                        .bienv21 {
+                            position: absolute;
+                            top:11rem;
+                            right: 3rem;
+                            font-size: 3rem; 
+                            opacity: 1rem;
+                        }
+                    }
+                    @media (min-width : 700px) and (max-width : 999px) {
+                            .bienv31 {
+                                position: absolute;
+                                top:15rem;
+                                right: 3rem;
+                                font-size: 3rem;
+                                font-family: 'Playfair Display', serif;
+                                color: rgba(237, 237, 243, 0.795);  
+                                opacity: 1rem;
+                            }
+                        }
+                        @media (min-width : 400px) and (max-width : 699px) {
+                            .bienv1 {
+                                position: absolute;
+                                top:3rem;
+                                font-size: 2.5rem;
+                                font-family: 'Playfair Display', serif;
+                                opacity: 1rem;
+                                right: 3rem;
+                            }
+                        }
+                        @media (min-width : 400px) and (max-width : 699px)  {
+                                .bienv21 {
+                                    position: absolute;
+                                    top:5.3rem;
+                                    right: 3rem;
+                                    font-size: 2.5rem; 
+                                    opacity: 1rem;
+                                }
+                            }
+                            @media (min-width : 400px) and (max-width : 699px)  {
+                                    .bienv31 {
+                                        position: absolute;
+                                        top:8rem;
+                                        right: 3rem;
+                                        font-size: 2.5rem;
+                                        font-family: 'Playfair Display', serif;
+                                        color: rgba(237, 237, 243, 0.795);  
+                                        opacity: 1rem;
+                                    }
+                                }
+                                @media (min-width : 200px) and (max-width : 399px) {
+                                    .bienv1 {
+                                        position: absolute;
+                                        top:3rem;
+                                        font-size: 1rem;
+                                        font-family: 'Playfair Display', serif;
+                                        opacity: 1rem;
+                                        right: 2rem;
+                                    }
+                                }
+                                @media (min-width : 200px) and (max-width : 399px) {
+                                        .bienv21 {
+                                            position: absolute;
+                                            top:4.2rem;
+                                            right: 2rem;
+                                            font-size: 1rem; 
+                                            opacity: 1rem;
+                                        }
+                                    }
+                                    @media (min-width : 200px) and (max-width : 399px) {
+                                            .bienv31 {
+                                                position: absolute;
+                                                top:5.2rem;
+                                                right: 2rem;
+                                                font-size: 1rem;
+                                                font-family: 'Playfair Display', serif;
+                                                color: rgba(237, 237, 243, 0.795);  
+                                                opacity: 1rem;
+                                            }
+                                        }
 //**termina seccion Trabajo en equipo**//
 
 
 
 //**Empieza integrantes Equipo de Trabajo**//
-.espacionombres{
 
-    height: 10rem;
-}
 .nombre{
     color: rgb(70, 182, 247);
     font-size: 2rem;
@@ -94,27 +229,63 @@ right: 3rem;
     color: rgb(70, 182, 247);
     font-size: 1.5rem;
     font-family: 'Playfair Display', serif;
-
+}
+@media (min-width : 850px) and (max-width : 1250px) {
+    .nombre1 {
+     
+        font-size: 1.5rem;
+     
+    }
+}
+@media (min-width : 850px) and (max-width : 1250px) {
+    .nomPosicion1 {
+        font-size: 1.5rem;
+     
+    }
 }
 .estiloCirculos{
-    height:15rem;
-   width: 15rem;
+    height:12rem;
+   width: 12rem;
    border-radius:20rem; 
-
+margin: 0rem;
+}
+@media (min-width : 750px) and (max-width : 1300px) {
+    .circulosahora {
+     
+        height:8rem;
+        width: 8rem;
+        border-radius:20rem; 
+    }
 }
 .espacioSecEquip{
-height: 30rem;
+margin: 1rem;
 
 }
 
 //**Termina integrantes Equipo de Trabajo**//
 
 //**parte acerca de nosotros**//
+
+
 .tituloacerca{
     color: rgb(70, 182, 247);
     font-size: 2rem;
     font-family: 'Playfair Display', serif;
 }
+
+@media(min-width : 901px) and (max-width : 1300px) {
+    .tituloacerca2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .tituloacerca1{
+        font-size: 1.2rem;
+       
+    }
+}
+
 .margenAcecaNos{
     margin: 6rem 1rem 6rem 1rem; 
 }
@@ -123,4 +294,27 @@ height: 30rem;
     color: rgb(70, 182, 247);
     font-size: 1.3rem;
     font-family: 'Playfair Display', serif;  
+}
+//**medias de acerca de nosotros**//
+@media(min-width : 901px) and (max-width : 1300px) {
+    .comienzo1 {
+        font-size: 1.2rem;
+    }
+}
+@media(min-width : 701px) and (max-width : 900px) {
+    .comienzo2 {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 479px) {
+    .comienzo3{
+        font-size: .9rem;
+        color: rgb(12, 122, 224);
+    }
+}
+@media (min-width : 480px) and (max-width: 700px) {
+    .comienzo4{
+        font-size: .8rem;
+        color: rgb(12, 122, 224);
+    }
 }
