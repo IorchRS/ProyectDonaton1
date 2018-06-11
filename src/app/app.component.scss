@@ -2,12 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 .fondoPrinBaner{
-background-color:rgb(70, 182, 247);
+background-color:rgb(255, 255, 255);
 opacity: 0.7;
 filter:  alpha(opacity=50);
 }
 .pad{
-padding: 1.1rem 0rem 0rem 0rem;
+padding: 1.1rem 0rem  1.1rem 0rem;
 
 }
 .pequenaLogo{
@@ -17,8 +17,13 @@ background-color: white;
 .margenson{
     margin: 2rem;
     }
+    .color1:hover{
+color: white;
+        background-color: rgb(70, 182, 247);
+        cursor: pointer;
+    }
 .color1{
-    color: snow;
+    color: rgb(70, 182, 247);
     text-decoration: none
 }
 .a:link{
@@ -90,11 +95,7 @@ background-color:rgb(199, 247, 232);
 text-align: center;
 }
 
-.pad{
-padding-left: 0rem;
-padding-right: 0rem;
 
-}
 .accion:active{
     background-color:rgb(85, 230, 247);
 }

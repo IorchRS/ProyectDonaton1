@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+.hig{
 
+    height: 40rem;
+
+}
 .fondo{
     margin: 0rem;
     padding: 0rem;
@@ -8,6 +12,8 @@
  }
 .ImgPrincipal{
     width: 100%;
+    margin: 0rem;
+    padding: 0rem;
 }
 .bienv{
 position: absolute;
@@ -217,7 +223,7 @@ filter:  alpha(opacity=50);
 width: 19rem;
 }
 .margenson{
-    margin: 6rem 0rem 6rem 0rem;
+    margin: 1rem 0rem 1rem 0rem;
     }
 .color1{
     color: snow;
@@ -234,8 +240,8 @@ color: rgb(9, 25, 247);
 
 }
 .sec3{
-    width: 100%;
-    height: 50rem;
+    width: 100%;;
+    height: 25rem;
 } 
 .sec3p{
     width: 40rem;
@@ -243,9 +249,9 @@ color: rgb(9, 25, 247);
 } 
 li{
     font-weight:inherit;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Playfair Display', serif;
-    color: rgba(239, 239, 245, 0.795);  
+    color: rgb(9, 25, 247);  
 }
 .ImagenDentro{
     position: absolute;
@@ -257,19 +263,15 @@ li{
     opacity: 1rem;
     
     }
-    .TextoDentro{
-        position: absolute;
-        top:10rem;
-        left: 3rem;
-    }
+  
     .estiloli{
         
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: 'Playfair Display', serif;
-        color: white;
+        color: rgb(9, 25, 247);
     }
 .sec{
-    width: 21rem;
+    width: 100%;
     height: 15rem;
 
 }
@@ -293,11 +295,7 @@ background-color:rgb(199, 247, 232);
 text-align: center;
 }
 
-.pad{
-padding-left: 0rem;
-padding-right: 0rem;
 
-}
 .accion:active{
     background-color:rgb(85, 230, 247);
 }
@@ -308,4 +306,104 @@ padding-right: 0rem;
         display: none;
     }
 }
-  
+  /*estilos de la seccion post*/
+  .invisible{
+    display: none;
+}
+.izquierda{
+    padding: 1rem 0rem 0rem 0rem; 
+
+font-size: 1rem;
+}
+
+.margenderecha{
+margin: 1.3rem;
+}
+.margenEspecial{
+    margin: .2rem 1.3rem .2rem 1.3rem; 
+}
+.letrasPequeñas{
+
+font-size: .9rem;
+
+}
+.cuadro{
+ width: 4.5rem;
+ height: 4.5rem;
+}
+
+
+
+.padIconos{
+    padding-left: 1.3rem;
+}
+.estiloMay{
+    font-weight: bold;
+    vertical-align:top;
+top:-5px;
+       text-align: left;
+       font-style: unset;
+font-size: 15px;
+display: inline-flex;
+color:black;
+position: relative;
+}
+.iconos{
+    width: 1.4rem;
+    padding: .7rem;
+    margin: 0rem .5rem 0rem .5rem;
+    cursor: pointer;
+
+}
+.estiloMay:hover{
+color:rgb(79, 185, 235);
+
+}
+a:link{
+    text-decoration:none;
+
+}
+.iconotwit{
+    background-image: url("../../assets/imagenes/logo-de-twiter.png");
+}
+
+.iconofece{
+    background-image: url("../../assets/imagenes/logo-pequeno-de-facebook1.png");
+}
+.iconotwit:hover{
+    background-image: url("../../assets/imagenes/logo-de-twiter1.png");
+}
+.iconoinstagram{
+    background-image: url("../../assets/imagenes/instagram.png");
+}
+.iconopinter{
+    width: 1.5rem;
+    padding: .7rem;
+    margin: 0rem .5rem 0rem .5rem;
+    background-image: url("../../assets/imagenes/pinterest-circulo-del-logotipo.png");
+}
+.iconopinter:hover{
+    background-image: url("../../assets/imagenes/pinterest-circulo-del-logotipo1.png");
+}
+.iconoinstagram:hover{
+    background-image: url("../../assets/imagenes/instagram2.png");
+}
+.iconofece:hover{
+    
+background-image: url("../../assets/imagenes/logo-pequeno-de-facebook.png");
+}
+
+.margen{
+    margin: 0em;
+    padding: 0em;
+    border: 0em;
+}
+.titulos{
+font-family: "metropolis-regular",sans-serif;
+font-size: 1.5rem;
+line-height: 1.8;
+padding-left: 2.2rem;
+-webkit-font-smoothing: antialiased;
+
+}
+  /*estilos de la seccion post*/

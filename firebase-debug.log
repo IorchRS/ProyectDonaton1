@@ -1,0 +1,45 @@
+[debug] [2018-06-11T05:17:49.826Z] ----------------------------------------------------------------------
+[debug] [2018-06-11T05:17:49.841Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Peloi\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-06-11T05:17:49.841Z] CLI Version:   3.18.6
+[debug] [2018-06-11T05:17:49.857Z] Platform:      win32
+[debug] [2018-06-11T05:17:49.857Z] Node Version:  v8.11.1
+[debug] [2018-06-11T05:17:49.857Z] Time:          Mon Jun 11 2018 00:17:49 GMT-0500 (Hora de verano central (México))
+[debug] [2018-06-11T05:17:49.857Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-11T05:17:49.935Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-11T05:17:49.951Z] > authorizing via signed-in user
+[debug] [2018-06-11T05:17:49.966Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-06-11T05:17:49.966Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/u6h0ndXR_Vru_Q_AIaT1vGS4TZOFXpNZsuDM_6OlXPnfUw5iDQIH7CZwYLQQ55_h',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Jun 11 2018 00:17:49 GMT-0500 (Hora de verano central (México))
+[debug] [2018-06-11T05:17:50.713Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-11T05:17:50.837Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/subirhoy  
+  
+ Mon Jun 11 2018 00:17:50 GMT-0500 (Hora de verano central (México))
+[debug] [2018-06-11T05:17:51.378Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-11T05:17:51.383Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/subirhoy/tokens  
+  
+ Mon Jun 11 2018 00:17:51 GMT-0500 (Hora de verano central (México))
+[debug] [2018-06-11T05:17:52.190Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'subirhoy'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist/CajaCompras directory for upload...
+[debug] [2018-06-11T05:17:55.094Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/subirhoy/uploads/-LEhGqzvt2f4tOxoA8hg?fileCount=56&message=  
+  
+ Mon Jun 11 2018 00:17:55 GMT-0500 (Hora de verano central (México))
+[debug] [2018-06-11T05:19:55.433Z] Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: Server Error. socket hang up
