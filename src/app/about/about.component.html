@@ -1,66 +1,71 @@
 
 <div class="container">
 
-<form class="fondo">
+<form class="fondo" >
     
     <div class="form-group col-12 col-md-6 col-lg-6">
-        <label for="inputAddress2" class="txt">Nombre</label>
-        <input type="text" class="form-control" id="inputNombre" placeholder="Nombres">
+        <label for="nombre" class="txt">Nombre</label>
+        <input  type="text" class="form-control" type="text" [(ngModel)]="nombre" name=nombre placeholder="nombre.." >
       </div>
   
   
   <div class="form-group col-12 col-md-6 col-lg-6">
-        <label for="inputEmail4" class="txt">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        <label for="telefono" class="txt">Telefono</label>
+        <input  type="text" class="form-control" [(ngModel)]="telefono" name=telefono placeholder="telefono..">
       </div>
      
    
     <div class="form-group col-12 col-md-6 col-lg-6">
       <label for="inputAddress" class="txt">Direccion</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Santa Tere">
+      <input type="text" class="form-control"[(ngModel)]="direccion" name=direccion placeholder="direccion..">
     </div>
+    <div class="form-group col-12 col-md-6 col-lg-6">
+        <label for="Email" class="txt">Correo Electronico</label>
+        <input type="text" class="form-control" [(ngModel)]="email" name=email placeholder="correo electronico">
+      </div>
   
     <div class="form-row">
+       
       <div class="form-group col-12 col-md-6 col-lg-6">
         <label for="inputCity" class="txt">Ciudad</label>
-        <input type="text" class="form-control" id="inputCity">
+        <input type="text" class="form-control" [(ngModel)]="ciudad" name=ciudad placeholder="ciudad..">
       </div>
       <div class="form-group  col-12 col-md-6 col-lg-6">
-        <label for="inputState" class="txt">Estado</label>
-        <select id="inputState" class="form-control">
+        <label for="inputAddress" class="txt">Estado</label>
+        <select  class="form-control"  [(ngModel)]="estado" name=estado >
           <option selected class="txt">Elige...</option>
-          <option class="txt">Zacatecas</option>
-          <option class="txt">Aguascalientes</option>
-          <option class="txt">Baja California</option>
-          <option class="txt">	Baja California Sur</option>
-          <option class="txt">Campeche</option>
-          <option class="txt">Coahuila de Zaragoza</option>
-          <option class="txt">Colima</option>
-          <option class="txt">Chiapas</option>
-          <option class="txt">Chihuahua</option>
-          <option class="txt">Distrito Federal</option>
-          <option class="txt">Durango</option>
-          <option class="txt">Guanajuato</option>
-          <option class="txt">Guerrero</option>
-          <option class="txt">Hidalgo</option>
-          <option class="txt">Jalisco</option>
-          <option class="txt">México</option>
-          <option class="txt">Michoacán de Ocampo</option>
-          <option class="txt">Morelos</option>
-          <option class="txt">Nayarit</option>
-          <option class="txt">Nuevo León</option>
-          <option class="txt">Oaxaca</option>
-          <option class="txt">Puebla</option>
-          <option class="txt">Querétaro</option>
-          <option class="txt">Quintana Roo</option>
-          <option class="txt">San Luis Potosí</option>
-          <option class="txt">Sinaloa</option>
-          <option class="txt">Sonora</option>
-          <option class="txt">Tabasco</option>
-          <option class="txt">Tamaulipas</option>
-          <option class="txt">Tlaxcala</option>
-          <option class="txt">Veracruz de Ignacio de la Llave</option>
-          <option class="txt">Yucatán</option>
+         <option >Zacatecas</option>
+          <option >Aguascalientes</option>
+          <option >Baja California</option>
+          <option >	Baja California Sur</option>
+          <option >Campeche</option>
+          <option >Coahuila de Zaragoza</option>
+          <option>Colima</option>
+          <option >Chiapas</option>
+         <option >Chihuahua</option>
+          <option >Distrito Federal</option>
+          <option>Durango</option>
+          <option >Guanajuato</option>
+          <option >Guerrero</option>
+          <option >Hidalgo</option>
+          <option >Jalisco</option>
+          <option >México</option>
+          <option >Michoacán de Ocampo</option>
+          <option >Morelos</option>
+          <option >Nayarit</option>
+          <option >Nuevo León</option>
+          <option>Oaxaca</option>
+          <option >Puebla</option>
+          <option >Querétaro</option>
+          <option >Quintana Roo</option>
+          <option >San Luis Potosí</option>
+          <option >Sinaloa</option>
+          <option >Sonora</option>
+          <option >Tabasco</option>
+          <option >Tamaulipas</option>
+          <option >Tlaxcala</option>
+          <option >Veracruz de Ignacio de la Llave</option>
+          <option >Yucatán</option>
         </select>
       </div>
      
@@ -68,23 +73,38 @@
     
       <div class="row justify-content"> 
           <div class="col-12 col-md-12 col-lg-12 d-flex justify-content-center">
-    <button type="submit" class="btn btn-primary ">Enviar</button>
+    <button type="submit" class="btn" value="Add a Post" (click)="addPost()"  >Enviar</button>
+   
   </div>
   </div>
   </form>
+  
+  
 
-  <div class="col-12 col-md-6 col-lg-6">
-Aqui tendira que salir
-      <ul *ngFor="let post of posts | async">
-          <li>
-            <strong>{{ post.nombre}}</strong>
-            <br>
-            {{post.telefono}}
-          </li>
-        </ul>   
+    <table class="table table-hover table-dark bg-secondary mt-4" >
+        <thead>
+          <tr>
+            
+            <th scope="col">Nombre</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Email</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Ciudad</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let post of posts | async">
+           
+            <td> <strong>{{ post.nombre}}</strong></td>
+            <td> <strong>{{ post.telefono}}</strong></td>
+            <td> <strong>{{ post.email}}</strong></td>
+            <td> <strong>{{ post.direccion}}</strong></td>
+            <td> <strong>{{ post.ciudad}}</strong></td>
+            <td> <strong>{{ post.estado}}</strong></td>
+          </tr>
+       
+        </tbody>
+      </table>
 
-
-
-
-    </div>
 </div>

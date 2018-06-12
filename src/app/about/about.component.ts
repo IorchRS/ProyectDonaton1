@@ -8,7 +8,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
-import {Observable} from 'rxjs';
+import {Observable, EMPTY} from 'rxjs';
 import {map} from 'rxjs/operators';
 
 var firebaseConfig  = {
@@ -22,10 +22,17 @@ var firebaseConfig  = {
 
 interface Post {
   nombre: string;
-  correo: string;
   telefono: number;
+direccion: string;
+  correo: string;
+email: string;
+ciudad: string;
+estado: string;
 }
-
+interface PostId extends Post { 
+  id: string; 
+  posts: any;
+}
 @NgModule({
   declarations: [
     
@@ -54,6 +61,14 @@ export class AppModule { }
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
+  nombre: string="";
+  telefono: number;
+direccion: string="";
+  
+email: string="";
+ciudad: string="";
+estado: string="";
+
   postsCol: AngularFirestoreCollection<Post>;
   posts: Observable<Post[]>;
   constructor(private route: ActivatedRoute, private afs: AngularFirestore) {
@@ -63,6 +78,12 @@ export class AboutComponent implements OnInit {
    ngOnInit() { 
     this.postsCol = this.afs.collection('personas');
     this.posts = this.postsCol.valueChanges();
+    
+  }
+ 
+ 
+  addPost() {
+    this.afs.collection('personas').add({'nombre': this.nombre, 'telefono': this.telefono,'direccion': this.direccion,'email': this.email,'ciudad': this.ciudad,'estado': this.estado});
   }
 
 }

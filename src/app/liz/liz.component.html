@@ -8,23 +8,58 @@
 </div>
 <div class="container color-light">
   <div class="col">
-    <p class="sm txt">ingrese lo que desea donar, adelante</p>
-
+<p class="txt">Ingrese los datos para contactarlo y realice su donación de la mejor forma, gracias.</p>
+<label for="nombre" class="txt">Nombre</label>
+        <input  type="text" class="form-control" id="prueba" [(ngModel)]="nombre" name=nombre placeholder="nombre.." >
+        <label for="telefono" class="txt">Telefono</label>
+        <input  type="text" class="form-control" id="prueba" [(ngModel)]="telefono" name=telefono placeholder="telefono..">
+        <label  class="txt">Correo Electronico</label>
+    <input type="text" class="form-control" id="prueba" [(ngModel)]="correo" name=correo placeholder="correo electronico">
     <form>
-      <input type="text" class="txt life-container" name="item" placeholder="Ingresa tu donacion" [(ngModel)]="goalText">
-      <br><span class="txt " >Para egregar: {{ goalText }}</span><br>
-      
-      <input type="submit" class="btn" value=  {{btnText}} (click)="addItem()">
-      <input type="submit" class="btn" value="enviar " (click)="addItem()">
+        <p class="sm txt">Ingrese lo que desea donar</p>
+        <input type="text" class="txt life-container" name="item" placeholder="Ingresa tu donacion" [(ngModel)]="goalText">
+        <br><span class="txt " >Para egregar: {{ goalText }}</span><br>
+        
+        <input type="submit" class="btn" value=  {{btnText}} (click)="addItem()">
+      <input type="submit" class="btn"  value="Enviar"  (click)="addPost()"  >
     </form>
   </div>
   <div class="col">
     <p class="life-container">
-      tu ayuda simpre es la diferencia :D
+      Tú ayuda simpre es la diferencia :D
     </p>
     <p class="life-container" *ngFor="let goal of goals">
       {{ goal }}
     </p>
   </div>
+
+ 
 </div>
+<div class="container">
+    <div class="row ">
+    <div class="col-12 col-md-12 col-lg-12  col-xl-12  ">
+<table class="col-12 col-md-12 col-lg-12  col-xl-12 table table-hover  bg-info text-white mt-4" >
+    <thead>
+      <tr>
+        
+        <th scope="col">Nombre</th>
+        <th scope="col">Teléfono</th>
+        <th scope="col">Email</th>
+        <th scope="col">Donacion</th>
+        <th scope="col">confirmacion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts | async">
+       
+        <td> <strong>{{ post.nombre}}</strong></td>
+        <td> <strong>{{ post.telefono}}</strong></td>
+        <td> <strong>{{ post.email}}</strong></td>
+        <td> <strong>{{ post.donacion}}</strong></td>
+        <td> <strong>{{ post.confirmacion}}</strong></td>
+      </tr>
+   
+    </tbody>
+  </table>
+</div></div></div>
  
